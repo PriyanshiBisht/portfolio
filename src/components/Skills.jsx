@@ -39,7 +39,7 @@ export default function Skills() {
   return (
     <section className="py-20 px-6" id="skills">
 
-      <h2 className="text-4xl font-bold text-center mb-10">
+      <h2 className="text-4xl font-bold text-center mb-10 text-white">
         Technical Skills
       </h2>
 
@@ -47,27 +47,27 @@ export default function Skills() {
       <div className="flex justify-center gap-4 flex-wrap mb-10">
 
         <button onClick={() => setCategory("All")}
-        className="border px-5 py-2 rounded-full">
+        className="border border-slate-700 text-slate-300 px-5 py-2 rounded-full hover:border-emerald-400 hover:text-emerald-400 transition">
           All
         </button>
 
         <button onClick={() => setCategory("Frontend")}
-        className="border px-5 py-2 rounded-full">
+        className="border border-slate-700 text-slate-300 px-5 py-2 rounded-full hover:border-emerald-400 hover:text-emerald-400 transition">
           Frontend
         </button>
 
         <button onClick={() => setCategory("Backend")}
-        className="border px-5 py-2 rounded-full">
+        className="border border-slate-700 text-slate-300 px-5 py-2 rounded-full hover:border-emerald-400 hover:text-emerald-400 transition">
           Backend
         </button>
 
         <button onClick={() => setCategory("Programming")}
-        className="border px-5 py-2 rounded-full">
+        className="border border-slate-700 text-slate-300 px-5 py-2 rounded-full hover:border-emerald-400 hover:text-emerald-400 transition">
           Programming
         </button>
 
         <button onClick={() => setCategory("Tools")}
-        className="border px-5 py-2 rounded-full">
+        className="border border-slate-700 text-slate-300 px-5 py-2 rounded-full hover:border-emerald-400 hover:text-emerald-400 transition">
           Tools
         </button>
 
@@ -83,13 +83,13 @@ export default function Skills() {
           .map((skill) => (
             <div
               key={skill.name}
-              className="bg-linear-to-b from-violet-200 to-slate-100 rounded-xl p-8 shadow hover:shadow-lg hover:-translate-y-2 duration-300 text-center"
+              className="bg-slate-800 rounded-xl p-8 shadow hover:shadow-lg hover:-translate-y-2 duration-300 text-center"
             >
               <div className="flex justify-center mb-4">
                 {skill.icon}
               </div>
 
-              <h3 className="font-semibold">
+              <h3 className="font-semibold text-slate-200">
                 {skill.name}
               </h3>
             </div>

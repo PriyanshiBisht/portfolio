@@ -12,7 +12,8 @@ import Skills from './components/Skills'
 
   function App() {
   return (
-   <div className="min-h-screen bg-linear-to-b from-violet-200 to-slate-100">
+   <div className="min-h-screen bg-slate-950 ">
+    
   
       <Navbar />
      <Hero/> 
